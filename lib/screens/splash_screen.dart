@@ -1,5 +1,8 @@
+import 'dart:developer';
+
+import 'package:chatime/api/apis.dart';
 import 'package:chatime/screens/home_screen.dart';
-import 'package:chatime/screens/login_screen.dart';
+import 'package:chatime/screens/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../main.dart';
@@ -22,6 +25,15 @@ class _SplashScreenState extends State<SplashScreen> {
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
       SystemChrome.setSystemUIOverlayStyle(
           const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+
+      if (APIs.auth.currentUser != null) {
+        log('\nUser: ${APIs.auth.currentUser}');
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (_) => HomeScreen()));
+      } else {
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (_) => LoginScreen()));
+      }
       //navigate to login screen
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (_) => LoginScreen()));

@@ -1,4 +1,5 @@
 import 'package:chatime/screens/home_screen.dart';
+import 'package:chatime/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'screens/auth/login_screen.dart'; // Import your login screen file
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blue,
       )),
       //home: LoginScreen(), // Set the login screen as the initial screen
-      home: const LoginScreen(),
+      home: const SplashScreen(),
     );
   }
 }
