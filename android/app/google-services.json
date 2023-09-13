@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "537494429065-jv02ssse6fvurb4q7bns7hca0nmc91t0.apps.googleusercontent.com",
+          "client_id": "537494429065-ro2ih7kkuu1j2cv4dan5i88vfh4fn4lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatime",
+            "certificate_hash": "3bda37c1724f7bc4e7acbf24c8ed31692c688a22"
+          }
+        },
+        {
+          "client_id": "537494429065-t2gaosh58db0q9gbo271tc9in3399c5f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

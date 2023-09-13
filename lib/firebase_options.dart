@@ -63,6 +63,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '537494429065',
     projectId: 'chatime-fe6cc',
     storageBucket: 'chatime-fe6cc.appspot.com',
+    androidClientId: '537494429065-ro2ih7kkuu1j2cv4dan5i88vfh4fn4lu.apps.googleusercontent.com',
     iosClientId: '537494429065-arbh9d4mialf19jn8b6grgsprufbmba3.apps.googleusercontent.com',
     iosBundleId: 'com.example.chatime',
   );
